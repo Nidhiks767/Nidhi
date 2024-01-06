@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Hotpot.png" class="logo">
+           <ul>
+        
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="header-text">
+            <p> STUDENT</p>
+            <h1>Hi I'm <span>Nidhi KS</span><br> currently Aspiring computer science engineering navigating the digital realm with a passion for algorithms, coding, and problem-solving."</h1>
+         </div>
+       
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="about -col-2">
+                        <h1 class="subtitle">ABOUT ME</h1>
+                        <p> Pursuing my B.Tech in Computer Science Engineering at RV University, Bangalore. I completed my 11th and 12th at Chaitanya, and until the 10th grade, I studied at Sri Vani Education Center, Bangalore.</p>
+                       
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                           
+                        </div>
+                        <div class="tab-contents active-tab id="Skills">
+                            <ul>
+                                <li><span>Programming Fundamentals</span></li>
+                                <li><span>Web Development Basics</span></li>
+                                <li><span>Computer Architecture</span></li>
+                                
+
+                            </ul>
+                        </div>
+                       
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="portfolio">
+        <div class="container"></div>
+        <h1 class="subtitle">My Work</h1>
+        <div class ="work list">
+            <div class="work">
+                <img src="image (1).png">
+                <div class="layer">
+                    <h3>Gaming website</h3>
+                    <p>I recently completed a project where I designed and implemented a web page called 'Hurdle Hopper.' The entire page was crafted using a combination of CSS, HTML, and JavaScript, showcasing my skills in front-end development. In this project, I focused on creating an engaging and user-friendly interface, utilizing CSS for styling, HTML for structuring the content, and JavaScript to enhance the interactive elements.
+
+                        The 'Hurdle Hopper' web page incorporates various features and functionalities, demonstrating my understanding of front-end technologies. I employed CSS to ensure a visually appealing layout, HTML to organize the content logically, and JavaScript to add dynamic elements that enhance the user experience.
+                        
+                        Overall, this project allowed me to apply and strengthen my skills in web development, from designing the layout to implementing interactive features. I am excited about this achievement and eager to continue expanding my knowledge in front-end development."</p>
+                        
+
+
+            </div>
+            
+            <div class="work">
+                <img src="image2.png">
+                
+
+            </div>
+            
+           
+            
+
+        </div>
+
+
+
+    </div>
+
+    
+    
+ </div>
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact left">
+                <h1 class="sub-title">CONTACT ME</h1>
+                <p><i class="fa-solid fa-envelope"></i>nidhiks767@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>7411638659</p>
+                <div class="social icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit">submit </button>
+            </form>
+        </div>
+    </div>
+
+ </div>
+ 
+ <script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+
+    }
+
+ </script>
+</body>
+</html>
+   
